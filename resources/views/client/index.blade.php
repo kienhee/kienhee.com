@@ -129,7 +129,7 @@
                         <img src="{{ asset('client-frontend') }}/images/avatar.png" class="profile-image"
                             alt="Trần Trung Kiên">
                         <h5 class="mb-0"><i>Trần Trung Kiên</i></h5>
-                        <small class="text-muted" id="job-current">{{ author()->career }}</small>
+                        <small class="text-muted" id="job-current">Software Developer</small>
                     </div>
                 </div>
                 <div class="mb-4">
