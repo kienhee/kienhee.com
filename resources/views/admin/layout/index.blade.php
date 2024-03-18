@@ -82,8 +82,7 @@
     <script src="{{ asset('admin-frontend') }}/assets/js/config.js"></script>
 
     {{-- import here --}}
-    <script src="https://cdn.tiny.cloud/1/{{ getEnv('TinyMCE_KEY') }}/tinymce/6/tinymce.min.js" referrerpolicy="origin">
-    </script>
+ <script src="https://cdn.tiny.cloud/1/el9eht3oqsjlpvjkdu2mx5gh01fq5xie6zt09pq791iqfhej/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
 
 <body>
