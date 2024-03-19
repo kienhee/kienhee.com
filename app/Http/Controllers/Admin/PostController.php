@@ -85,8 +85,8 @@ class PostController extends Controller
         $data = $request->validate([
             'title' => 'required|max:255|unique:posts,title',
             'content' => 'required',
-            'title_meta' => 'required',
-            'description_meta' => 'required',
+            'title_meta' => 'required|max:255',
+            'description_meta' => 'required|max:255',
             'tags' => 'required',
             'images' => 'required',
             'category_id' => 'required',
@@ -127,8 +127,8 @@ class PostController extends Controller
     {
         $data = $request->validate([
             'title' => 'required|max:255|unique:posts,title,' . $id,
-            'title_meta' => 'required',
-            'description_meta' => 'required',
+            'title_meta' => 'required|max:255',
+            'description_meta' => 'required|max:255',
             'content' => 'required',
             'tags' => 'required',
             'images' => 'required',

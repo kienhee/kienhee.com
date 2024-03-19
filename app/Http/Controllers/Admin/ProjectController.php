@@ -82,10 +82,10 @@ class ProjectController extends Controller
         $data = $request->validate([
             'title' => 'required|max:255|unique:projects,title',
             'content' => 'required',
-            'description' => 'required',
+            'description' => 'required|max:255',
             'images' => 'required',
             'category_id' => 'required',
-            'url' => 'nullable|url',
+            'url' => 'nullable|url|max:255',
         ], [
             'title.required' => 'Vui lòng nhập tiêu đề',
             'title.unique' => 'Tiêu đề đã tồn tại',
@@ -120,10 +120,10 @@ class ProjectController extends Controller
         $data = $request->validate([
             'title' => 'required|max:255|unique:projects,title,' . $id,
             'content' => 'required',
-            'description' => 'required',
+            'description' => 'required|max:255',
             'images' => 'required',
             'category_id' => 'required',
-            'url' => 'nullable|url',
+            'url' => 'nullable|url|max:255',
         ], [
             'title.required' => 'Vui lòng nhập tiêu đề',
             'title.unique' => 'Tiêu đề đã tồn tại',
