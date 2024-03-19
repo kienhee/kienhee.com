@@ -679,9 +679,21 @@ if (typeof $ !== 'undefined') {
     selector: "textarea.my-editor",
    codesample_global_prismjs: true,
     plugins:
-        " fullscreen preview anchor autolink charmap  emoticons image link lists media searchreplace table visualblocks wordcount",
+        "codesample fullscreen preview anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount",
     toolbar:
-        " fullscreen preview undo redo image | blocks  fontsize | bold italic underline strikethrough | link  table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat",
+        "codesample fullscreen preview undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat",
+    codesample_languages: [
+        { text: "HTML/XML", value: "markup" },
+        { text: "JavaScript", value: "javascript" },
+        { text: "CSS", value: "css" },
+        { text: "PHP", value: "php" },
+        { text: "Ruby", value: "ruby" },
+        { text: "Python", value: "python" },
+        { text: "Java", value: "java" },
+        { text: "C", value: "c" },
+        { text: "C#", value: "csharp" },
+        { text: "C++", value: "cpp" },
+    ],
     file_picker_callback: function (callback, value, meta) {
         var x =
             window.innerWidth ||
