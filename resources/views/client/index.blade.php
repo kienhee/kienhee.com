@@ -116,7 +116,7 @@
                     @endif
 
 
-                    <div class="d-flex justify-content-center align-items-center ">
+                    <div class="d-flex justify-content-center align-items-center w-100">
                         {{ $posts->withQueryString()->links() }}
                     </div>
                 </div>
