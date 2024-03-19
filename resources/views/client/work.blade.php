@@ -39,7 +39,7 @@
                 </p>
             </div>
         @endif
-        <h5>Một số hình ảnh liên quan:</h5>
+        <h5 class="mb-4">Một số hình ảnh liên quan:</h5>
         <div class="slider mb-5">
             @foreach (explode(',', $work->images) as $image)
                 <div><a class="popup-link" href="{{ $image }}" title="Click để phóng to"><img class="img-fluid"
