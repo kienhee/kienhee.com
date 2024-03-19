@@ -28,19 +28,24 @@
             <h3 class="mt-2">{{ $work->title }}
             </h3>
         </div>
+
+        <div class="mb-3">
+            {!! $work->content !!}
+        </div>
+
+        @if ($work->url)
+            <div class="mb-5">
+                <p>Ghé thăm website <a href="{{ $work->url }}" target="_blank" class="text-primary">Tại đây</a>
+                </p>
+            </div>
+        @endif
+        <h5>Một số hình ảnh liên quan:</h5>
         <div class="slider mb-5">
             @foreach (explode(',', $work->images) as $image)
-                <div><a class="popup-link" href="{{ $image }}" title="click để phóng to"><img class="img-fluid"
+                <div><a class="popup-link" href="{{ $image }}" title="Click để phóng to"><img class="img-fluid"
                             src="{{ $image }}"></a></div>
             @endforeach
         </div>
-        <div class="mb-5">
-            {!! $work->content !!}
-        </div>
-        @if ($work->url)
-            <p>Ghé thăm website <a href="{{ $work->url }}" target="_blank" class="text-primary mb-5">Tại đây</a>
-            </p>
-        @endif
     </section>
     <footer class="py-5  bg-dark text-white">
         <div class=" d-flex justify-content-center gap-3">
@@ -87,7 +92,7 @@
             $('.slider').slick({
                 autoplay: true,
                 dots: true,
-                arrows: true,
+                arrows: false,
             });
             // Kích hoạt Magnific Popup cho hình ảnh cụ thể
             $('.popup-link').magnificPopup({

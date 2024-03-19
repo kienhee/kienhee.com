@@ -43,7 +43,7 @@ class ClientController extends Controller
     public function author()
     {
         $projects = Project::orderBy('created_at', 'desc')->get();
-        $categories = getAllCategories(2);
+        $categories = getAllCategoriesProject();
 
         return view('client.author', compact('projects', 'categories'));
     }

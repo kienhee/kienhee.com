@@ -131,9 +131,11 @@ tr {
     font-weight: 500;
     font-size: 18px;
 }
-.category li{
+
+.category li {
     list-style: none;
 }
+
 .category .active {
     background: hsl(0, 0%, 93.0%);
     font-weight: 500;
@@ -516,8 +518,8 @@ tr {
 
 .single_portfolio .icon {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -547,8 +549,6 @@ tr {
 .single_portfolio:hover .icon {
     opacity: 1;
     visibility: visible;
-    top: 50%;
-    left: 50%;
 }
 
 .portfolio_details_inner .row {
@@ -623,7 +623,7 @@ tr {
 }
 
 .single_portfolio:hover .overlay {
-    background: #0ea4e98b;
+    background: rgba(0, 0, 0, .5);
 }
 
 .pagination {
