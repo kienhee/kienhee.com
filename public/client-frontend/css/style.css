@@ -626,6 +626,10 @@ tr {
     background: rgba(0, 0, 0, .5);
 }
 
+#Pagination nav {
+    width: 100%;
+}
+
 .pagination {
     gap: 5px;
 }
